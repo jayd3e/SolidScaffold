@@ -1,0 +1,22 @@
+<%namespace file="style.mako" name="style" />
+<%namespace file="header.mako" name="header" />
+<%namespace file="footer.mako" name="footer" />
+<%namespace file="app.mako" name="app" />
+
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>{{ project }}</title>
+        ${ style.style() }
+    </head>
+    <body class="fixed">
+        ${ header.header() }
+
+        ${ self.page() }
+
+        ${ footer.footer() }
+    </body>
+
+    ${ app.app() }
+    ${ self.scripts() }
+</html>
