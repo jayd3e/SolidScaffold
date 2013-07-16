@@ -5,7 +5,7 @@ requires = ['pyramid']
 
 entry_points = """
       [pyramid.scaffold]
-      solid=solidscaffold.pyramid_scaffolds:SolidScaffold
+      solid=solidscaffold:SolidTemplate
       """
 
 setup(name='SolidScaffold',
